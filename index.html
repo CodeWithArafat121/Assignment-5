@@ -11,7 +11,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                primary: 'rgb(29, 209, 0);',
+                primaryColor: 'rgb(29, 209, 0);',
               }
             }
           }
@@ -22,18 +22,48 @@
   <body class="font-Raleway">
     <header class="my-container mx-auto mt-14">
       <nav class="flex justify-between items-center">
-        <h1 class="text-4xl text-black font-extrabold">Madinah-Ticket</h1>
-        <ul class="flex gap-14 text-xl text-gray-900 font-medium">
+        <h1 class="text-xl md:text-4xl text-black font-extrabold">Madinah-Ticket</h1>
+        <ul class="hidden lg:flex gap-14 text-xl text-gray-900 font-medium">
           <li>Home</li>
           <li>About</li>
           <li>Destination</li>
           <li>Search</li>
         </ul>
-        <button class="text-xl text-primary font-bold bg-[rgba(29,209,0,0.1)] flex gap-3 items-center px-8 py-4 border-2 border-[rgba(29,209,0,0.4)] rounded-xl">Bus <img src="./images/bus-icon.png" alt=""></button>
+        <button class="text-1xl text-primaryColor font-extrabold bg-[rgba(29,209,0,0.1)] flex gap-3 items-center px-4 py-2 md:px-8 md:py-4 border-2 border-[rgba(29,209,0,0.4)] rounded-xl">Bus <img src="./images/bus-icon.png" alt=""></button>
       </nav>
+      <div class="bg-[linear-gradient(180.00deg,rgba(3,7,18,0.5),rgba(3,7,18,0)100%),url(../images/banner.png);] bg-no-repeat bg-center bg-cover mt-9 py-20 text-center rounded-3xl relative ">
+        <h2 class="text-6xl text-white font-extrabold w-10/12 mx-auto leading-snug">End-to-End Travel with <span class="text-primaryColor">Madinah Paribahan</span></h2>
+        <p class="font-Inter text-xl text-white font-normal mt-4 w-10/12 mx-auto">Experience seamless end-to-end travel with Madinah Paribahan, ensuring comfort, safety, and reliability. From booking to arrival, enjoy a hassle-free journey with exceptional service and customer satisfaction.</p>
+        <button class="text-xl text-black font-bold bg-primaryColor px-8 py-5 rounded-xl mt-8">Buy Tickets</button>
+        <div class="font-Inter flex justify-center gap-6 absolute left-28 -bottom-28 my-container">
+            <div class="w-[308px] bg-white flex justify-center items-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl">
+                <img src="./images/people.png" alt="">
+                <div>
+                    <h2 class="text-4xl text-black font-bold">500K+</h2>
+                    <p class="text-xl text-gray-500 font-normal">Registered users</p>
+                </div>
+            </div>
+            <div class="w-[308px] bg-white flex justify-center items-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl">
+                <img src="./images/ticket-cupon.png" alt="">
+                <div>
+                    <h2 class="text-4xl text-black font-bold">1.7 lacks+</h2>
+                    <p class="text-xl text-gray-500 font-normal">Registered users</p>
+                </div>
+            </div>
+            <div class="w-[308px] bg-white flex justify-center items-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl">
+                <img src="./images/stoppage.png" alt="">
+                <div>
+                    <h2 class="text-4xl text-black font-bold">80K+</h2>
+                    <p class="text-xl text-gray-500 font-normal">Rental partners</p>
+                </div>
+            </div>
+        </div>
+      </div>
     </header>
 
-    <main></main>
+    <main>
+
+    </main>
 
     <footer></footer>
     <script src="./script/bus.js"></script>
