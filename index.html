@@ -17,7 +17,21 @@
         },
       };
     </script>
-    <link rel="stylesheet" href="/styles/bus.css" />
+    <link rel="stylesheet" href="./styles/bus.css">
+    <style>
+      .my-container {
+        width: 80%;
+        max-width: 1200px;
+      }
+
+      .font-Inter {
+        font-family: "Inter", sans-serif;
+      }
+
+      .font-Raleway {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
   </head>
   <body class="font-Raleway">
     <header class="my-container mx-auto mt-14 relative">
@@ -38,7 +52,7 @@
         </button>
       </nav>
       <div
-        class="bg-[linear-gradient(180.00deg,rgba(3,7,18,0.5),rgba(3,7,18,0)100%),url(../images/banner.png);] bg-no-repeat bg-center bg-cover mt-9 py-20 text-center rounded-3xl relative"
+        class="bg-[linear-gradient(180.00deg,rgba(3,7,18,0.5),rgba(3,7,18,0)100%),url(./images/banner.png);] bg-no-repeat bg-center bg-cover mt-9 py-20 text-center rounded-3xl relative"
       >
         <h2
           class="text-4xl lg:text-6xl text-white font-extrabold w-10/12 mx-auto leading-snug"
@@ -97,32 +111,48 @@
       <section class="my-container mx-auto mt-48 text-center">
         <h2 class="text-4xl text-black font-bold">Best offers for you</h2>
         <div class="flex justify-center gap-6 mx-auto mt-12">
-        <div class="w-1/2 bg-[#FFBF0F] flex justify-evenly items-center rounded-3xl px-12">
-          <div class="font-Inter space-y-3">
-            <h2 class="text-4xl text-gray-800 font-black">15% OFF</h2>
-            <p class="text-xl text-black font-semibold">on your next purchase</p>
-            <p class="text-base text-gray-500 font-medium">use by January 2024</p>
+          <div
+            class="w-1/2 bg-[#FFBF0F] flex justify-evenly items-center rounded-3xl px-12"
+          >
+            <div class="font-Inter space-y-3">
+              <h2 class="text-4xl text-gray-800 font-black">15% OFF</h2>
+              <p class="text-xl text-black font-semibold">
+                on your next purchase
+              </p>
+              <p class="text-base text-gray-500 font-medium">
+                use by January 2024
+              </p>
+            </div>
+            <img src="./images/cupon-devider.png" alt="" />
+            <div class="space-y-2">
+              <h2 class="text-3xl text-black font-bold">NEW15</h2>
+              <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
+            </div>
           </div>
-          <img src="./images/cupon-devider.png" alt="">
-          <div class="space-y-2">
-            <h2 class="text-3xl text-black font-bold">NEW15</h2>
-            <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
+          <div
+            class="w-1/2 bg-[#F78C9C] flex justify-evenly items-center rounded-3xl px-12"
+          >
+            <div class="font-Inter space-y-3">
+              <h2 class="text-4xl text-gray-800 font-black">20% OFF</h2>
+              <p class="text-xl text-black font-semibold">
+                on your next purchase
+              </p>
+              <p class="text-base text-gray-500 font-medium">
+                use by January 2024
+              </p>
+            </div>
+            <img src="./images/cupon-devider.png" alt="" />
+            <div class="space-y-2">
+              <h2 class="text-3xl text-black font-bold">Couple 20</h2>
+              <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
+            </div>
           </div>
         </div>
-        <div class="w-1/2 bg-[#F78C9C] flex justify-evenly items-center rounded-3xl px-12">
-          <div class="font-Inter space-y-3">
-            <h2 class="text-4xl text-gray-800 font-black">20% OFF</h2>
-            <p class="text-xl text-black font-semibold">on your next purchase</p>
-            <p class="text-base text-gray-500 font-medium">use by January 2024</p>
-          </div>
-          <img src="./images/cupon-devider.png" alt="">
-          <div class="space-y-2">
-            <h2 class="text-3xl text-black font-bold">Couple 20</h2>
-            <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
-          </div>
-        </div>
-      </div>
-      <button class="text-xl text-primaryColor font-bold border-2 border-primaryColor rounded-xl px-8 py-5 mt-16">See All Offers</button>
+        <button
+          class="text-xl text-primaryColor font-bold border-2 border-primaryColor rounded-xl px-8 py-5 mt-16"
+        >
+          See All Offers
+        </button>
       </section>
     </main>
 

@@ -1,18 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
-.my-container{
-    width: 80%;
-    max-width: 1200px;
-}
-
-.font-Inter {
-  font-family: "Inter", sans-serif;
-}
-
-.font-Raleway{
-    font-family: "Raleway", sans-serif;
-}
-
 /* .primary-text-color{
    color : rgb(29, 209, 0);
 } */
