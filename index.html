@@ -17,7 +17,7 @@
         },
       };
     </script>
-    <link rel="stylesheet" href="./styles/bus.css">
+    <link rel="stylesheet" href="./styles/bus.css" />
     <style>
       .my-container {
         width: 80%;
@@ -33,6 +33,7 @@
       }
     </style>
   </head>
+
   <body class="font-Raleway">
     <header class="my-container mx-auto mt-14 relative">
       <nav class="flex justify-between items-center">
@@ -108,11 +109,15 @@
     </header>
 
     <main>
-      <section class="my-container mx-auto mt-48 text-center">
-        <h2 class="text-4xl text-black font-bold">Best offers for you</h2>
-        <div class="flex justify-center gap-6 mx-auto mt-12">
+      <section class="my-container mx-auto mt-16 lg:mt-48 text-center">
+        <h2 class="text-3xl md:text-4xl text-black font-bold">
+          Best offers for you
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row justify-center gap-6 mx-auto mt-12"
+        >
           <div
-            class="w-1/2 bg-[#FFBF0F] flex justify-evenly items-center rounded-3xl px-12"
+            class="lg:w-1/2 bg-[#FFBF0F] flex flex-col md:flex-row md:justify-evenly items-center rounded-3xl py-6 md:py-0 md:px-12"
           >
             <div class="font-Inter space-y-3">
               <h2 class="text-4xl text-gray-800 font-black">15% OFF</h2>
@@ -123,14 +128,23 @@
                 use by January 2024
               </p>
             </div>
-            <img src="./images/cupon-devider.png" alt="" />
+            <img
+              class="hidden md:flex"
+              src="./images/cupon-devider.png"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full"
+              src="./images/cupon-devider-1.png"
+              alt=""
+            />
             <div class="space-y-2">
               <h2 class="text-3xl text-black font-bold">NEW15</h2>
               <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
             </div>
           </div>
           <div
-            class="w-1/2 bg-[#F78C9C] flex justify-evenly items-center rounded-3xl px-12"
+            class="lg:w-1/2 bg-[#F78C9C] flex flex-col md:flex-row justify-evenly items-center rounded-3xl py-6 md:py-0 md:px-12"
           >
             <div class="font-Inter space-y-3">
               <h2 class="text-4xl text-gray-800 font-black">20% OFF</h2>
@@ -141,7 +155,16 @@
                 use by January 2024
               </p>
             </div>
-            <img src="./images/cupon-devider.png" alt="" />
+            <img
+              class="hidden md:flex"
+              src="./images/cupon-devider.png"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full"
+              src="./images/cupon-devider-1.png"
+              alt=""
+            />
             <div class="space-y-2">
               <h2 class="text-3xl text-black font-bold">Couple 20</h2>
               <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
@@ -153,6 +176,95 @@
         >
           See All Offers
         </button>
+      </section>
+
+      <section
+        class="mt-28 bg-[#F7F8F8] border-t-2 border-primaryColor rounded-t-[88px]"
+      >
+        <div class="my-container mx-auto mt-28">
+          <h2 class="text-4xl text-black font-bold text-center">
+            Madinah Paribahan
+          </h2>
+          <p
+            class="font-Inter text-xl text-gray-500 font-normal text-center mt-6"
+          >
+            Embark on a seamless journey with Madinah Paribahan, ensuring
+            end-to-end travel excellence. From comfortable buses to attentive
+            service, experience a hassle-free adventure with unparalleled
+            convenience and satisfaction.
+          </p>
+          <div
+            class="flex flex-col lg:flex-row  bg-white mt-12 border rounded-3xl"
+          >
+            <div class="lg:w-3/4 lg:h-14 p-4 md:p-8">
+              <div class="flex justify-between">
+                <div class="lg:w-7/12 flex gap-3">
+                  <img class="w-10 h-10 md:w-28 md:h-14" src="./images/bus-logo.png" alt="" />
+                  <div>
+                    <h1 class="text-xs md:text-3xl text-black font-bold">
+                      Madinah Paribahan
+                    </h1>
+                    <p
+                      class="font-Inter text-xs md:text-base text-gray-500 font-normal"
+                    >
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="font-Inter text-xs md:text-base text-primaryColor font-medium bg-[rgba(29,209,0,0.15)] flex items-center md:gap-2 p-0 md:px-5 md:py-4 rounded-xl"
+                >
+                  <img src="./images/seat-green.png" alt="" />
+                  <span>40</span> Seats left
+                </button>
+              </div>
+              <div class="bg-[#F7F8F8] mt-6 p-4 md:p-8 rounded-3xl">
+                <div class="flex justify-between border-b-2 border-dashed pb-6">
+                  <p class="text-base md:text-xl text-gray-500 font-semibold">Route</p>
+                  <p class="text-base md:text-xl text-black font-semibold">Dhaka - Sylhet</p>
+                </div>
+                <div
+                  class="flex justify-between border-b-2 border-dashed mt-6 pb-6"
+                >
+                  <p class="text-base md:text-xl text-gray-500 font-semibold">
+                    Departure Time
+                  </p>
+                  <p class="text-base md:text-xl text-black font-semibold">9:00 PM</p>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between gap-6 mt-6 font-Inter">
+                  <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
+                    <h2 class="text-base text-gray-900 font-medium">
+                      Boarding Point - Laxmipur
+                    </h2>
+                  </div>
+                  <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
+                    <h2 class="text-base text-gray-900 font-medium">
+                      Dropping Point - Bogura
+                    </h2>
+                  </div>
+                  <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
+                    <h2 class="text-base text-gray-900 font-medium">
+                      Est. Time - 11 Hour
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              class="hidden lg:flex mr-5"
+              src="./images/info-devider.png"
+              alt=""
+            />
+            <img class="lg:hidden" src="./images/info-devider-1.png" alt="" />
+            <div class="flex flex-col justify-center items-center gap-7">
+              <img src="./images/fare.png" alt="" />
+              <div class="text-center">
+                <h2 class="text-3xl text-black font-bold mb-2">550</h2>
+                <p class="text-2xl text-gray-500 font-semibold">Per Seat</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
