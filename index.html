@@ -1,275 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment-5</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              primaryColor: "rgb(29, 209, 0);",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment-5</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            primaryColor: "rgb(29, 209, 0);",
           },
         },
-      };
-    </script>
-    <link rel="stylesheet" href="./styles/bus.css" />
-    <style>
-      .my-container {
-        width: 80%;
-        max-width: 1200px;
-      }
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="./styles/bus.css" />
+  <style>
+    .my-container {
+      width: 90%;
+      max-width: 1200px;
+    }
 
-      .font-Inter {
-        font-family: "Inter", sans-serif;
-      }
+    .font-Inter {
+      font-family: "Inter", sans-serif;
+    }
 
-      .font-Raleway {
-        font-family: "Raleway", sans-serif;
-      }
-    </style>
-  </head>
+    .font-Raleway {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+</head>
 
-  <body class="font-Raleway">
-    <header class="my-container mx-auto mt-14 relative">
-      <nav class="flex justify-between items-center">
-        <h1 class="text-xl md:text-4xl text-black font-extrabold">
-          Madinah-Ticket
-        </h1>
-        <ul class="hidden lg:flex gap-14 text-xl text-gray-900 font-medium">
-          <li>Home</li>
-          <li>About</li>
-          <li>Destination</li>
-          <li>Search</li>
-        </ul>
-        <button
-          class="text-1xl text-primaryColor font-extrabold bg-[rgba(29,209,0,0.1)] flex gap-3 items-center px-4 py-2 md:px-8 md:py-4 border-2 border-[rgba(29,209,0,0.4)] rounded-xl"
-        >
-          Bus <img src="./images/bus-icon.png" alt="" />
-        </button>
-      </nav>
+<body class="font-Raleway">
+  <header class="my-container mx-auto mt-14 relative">
+    <nav class="flex justify-between items-center">
+      <h1 class="text-xl md:text-4xl text-black font-extrabold">
+        Madinah-Ticket
+      </h1>
+      <ul class="hidden lg:flex gap-14 text-xl text-gray-900 font-medium">
+        <li>Home</li>
+        <li>About</li>
+        <li>Destination</li>
+        <li>Search</li>
+      </ul>
+      <button
+        class="text-1xl text-primaryColor font-extrabold bg-[rgba(29,209,0,0.1)] flex gap-3 items-center px-4 py-2 md:px-8 md:py-4 border-2 border-[rgba(29,209,0,0.4)] rounded-xl">
+        Bus <img src="./images/bus-icon.png" alt="" />
+      </button>
+    </nav>
+    <div
+      class="bg-[linear-gradient(180.00deg,rgba(3,7,18,0.5),rgba(3,7,18,0)100%),url(./images/banner.png);] bg-no-repeat bg-center bg-cover mt-9 py-20 text-center rounded-3xl relative">
+      <h2 class="text-4xl lg:text-6xl text-white font-extrabold w-10/12 mx-auto leading-snug">
+        End-to-End Travel with <br />
+        <span class="text-primaryColor">Madinah Paribahan</span>
+      </h2>
+      <p class="font-Inter text-xl text-white font-normal mt-4 w-10/12 mx-auto">
+        Experience seamless end-to-end travel with Madinah Paribahan, ensuring
+        comfort, safety, and reliability. From booking to arrival, enjoy a
+        hassle-free journey with exceptional service and customer
+        satisfaction.
+      </p>
+      <button class="text-xl text-black font-bold bg-primaryColor px-8 py-5 rounded-xl mt-8">
+        Buy Tickets
+      </button>
+    </div>
+    <div
+      class="font-Inter flex flex-col lg:flex-row justify-center md:items-center gap-6 lg:absolute left-28 -bottom-28 my-container mx-auto mt-5">
+      <div class="w-72 md:w-[360px] bg-white flex justify-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl">
+        <img src="./images/people.png" alt="" />
+        <div>
+          <h2 class="text-2xl lg:text-4xl text-black font-bold">500K+</h2>
+          <p class="text-xl text-gray-500 font-normal">Registered users</p>
+        </div>
+      </div>
       <div
-        class="bg-[linear-gradient(180.00deg,rgba(3,7,18,0.5),rgba(3,7,18,0)100%),url(./images/banner.png);] bg-no-repeat bg-center bg-cover mt-9 py-20 text-center rounded-3xl relative"
-      >
-        <h2
-          class="text-4xl lg:text-6xl text-white font-extrabold w-10/12 mx-auto leading-snug"
-        >
-          End-to-End Travel with <br />
-          <span class="text-primaryColor">Madinah Paribahan</span>
+        class="w-72 md:w-[360px] bg-white flex justify-center items-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl">
+        <img src="./images/ticket-cupon.png" alt="" />
+        <div>
+          <h2 class="text-4xl text-black font-bold">1.7 lacks+</h2>
+          <p class="text-xl text-gray-500 font-normal">Registered users</p>
+        </div>
+      </div>
+      <div
+        class="w-72 md:w-[360px] bg-white flex justify-center items-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl">
+        <img src="./images/stoppage.png" alt="" />
+        <div>
+          <h2 class="text-4xl text-black font-bold">80K+</h2>
+          <p class="text-xl text-gray-500 font-normal">Rental partners</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="my-container mx-auto mt-16 lg:mt-48 text-center">
+      <h2 class="text-3xl md:text-4xl text-black font-bold">
+        Best offers for you
+      </h2>
+      <div class="flex flex-col lg:flex-row justify-center gap-6 mx-auto mt-12">
+        <div
+          class="lg:w-1/2 bg-[#FFBF0F] flex flex-col md:flex-row md:justify-evenly items-center rounded-3xl py-6 md:py-0 md:px-12">
+          <div class="font-Inter space-y-3">
+            <h2 class="text-4xl text-gray-800 font-black">15% OFF</h2>
+            <p class="text-xl text-black font-semibold">
+              on your next purchase
+            </p>
+            <p class="text-base text-gray-500 font-medium">
+              use by January 2024
+            </p>
+          </div>
+          <img class="hidden md:flex" src="./images/cupon-devider.png" alt="" />
+          <img class="md:hidden w-full" src="./images/cupon-devider-1.png" alt="" />
+          <div class="space-y-2">
+            <h2 class="text-3xl text-black font-bold">NEW15</h2>
+            <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/2 bg-[#F78C9C] flex flex-col md:flex-row justify-evenly items-center rounded-3xl py-6 md:py-0 md:px-12">
+          <div class="font-Inter space-y-3">
+            <h2 class="text-4xl text-gray-800 font-black">20% OFF</h2>
+            <p class="text-xl text-black font-semibold">
+              on your next purchase
+            </p>
+            <p class="text-base text-gray-500 font-medium">
+              use by January 2024
+            </p>
+          </div>
+          <img class="hidden md:flex" src="./images/cupon-devider.png" alt="" />
+          <img class="md:hidden w-full" src="./images/cupon-devider-1.png" alt="" />
+          <div class="space-y-2">
+            <h2 class="text-3xl text-black font-bold">Couple 20</h2>
+            <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <button class="text-xl text-primaryColor font-bold border-2 border-primaryColor rounded-xl px-8 py-5 mt-16">
+        See All Offers
+      </button>
+    </section>
+
+    <section class="mt-28 bg-[#F7F8F8] border-t-2 border-primaryColor rounded-t-[88px]">
+      <div class="my-container mx-auto mt-28">
+        <h2 class="text-4xl text-black font-bold text-center">
+          Madinah Paribahan
         </h2>
-        <p
-          class="font-Inter text-xl text-white font-normal mt-4 w-10/12 mx-auto"
-        >
-          Experience seamless end-to-end travel with Madinah Paribahan, ensuring
-          comfort, safety, and reliability. From booking to arrival, enjoy a
-          hassle-free journey with exceptional service and customer
-          satisfaction.
+        <p class="font-Inter text-xl text-gray-500 font-normal text-center mt-6">
+          Embark on a seamless journey with Madinah Paribahan, ensuring
+          end-to-end travel excellence. From comfortable buses to attentive
+          service, experience a hassle-free adventure with unparalleled
+          convenience and satisfaction.
         </p>
-        <button
-          class="text-xl text-black font-bold bg-primaryColor px-8 py-5 rounded-xl mt-8"
-        >
-          Buy Tickets
-        </button>
-      </div>
-      <div
-        class="font-Inter flex flex-col lg:flex-row justify-center md:items-center gap-6 lg:absolute left-28 -bottom-28 my-container mx-auto mt-5"
-      >
-        <div
-          class="w-72 md:w-[360px] bg-white flex justify-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl"
-        >
-          <img src="./images/people.png" alt="" />
-          <div>
-            <h2 class="text-2xl lg:text-4xl text-black font-bold">500K+</h2>
-            <p class="text-xl text-gray-500 font-normal">Registered users</p>
-          </div>
-        </div>
-        <div
-          class="w-72 md:w-[360px] bg-white flex justify-center items-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl"
-        >
-          <img src="./images/ticket-cupon.png" alt="" />
-          <div>
-            <h2 class="text-4xl text-black font-bold">1.7 lacks+</h2>
-            <p class="text-xl text-gray-500 font-normal">Registered users</p>
-          </div>
-        </div>
-        <div
-          class="w-72 md:w-[360px] bg-white flex justify-center items-center gap-6 py-8 border-b-4 border-primaryColor rounded-3xl"
-        >
-          <img src="./images/stoppage.png" alt="" />
-          <div>
-            <h2 class="text-4xl text-black font-bold">80K+</h2>
-            <p class="text-xl text-gray-500 font-normal">Rental partners</p>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="my-container mx-auto mt-16 lg:mt-48 text-center">
-        <h2 class="text-3xl md:text-4xl text-black font-bold">
-          Best offers for you
-        </h2>
-        <div
-          class="flex flex-col lg:flex-row justify-center gap-6 mx-auto mt-12"
-        >
-          <div
-            class="lg:w-1/2 bg-[#FFBF0F] flex flex-col md:flex-row md:justify-evenly items-center rounded-3xl py-6 md:py-0 md:px-12"
-          >
-            <div class="font-Inter space-y-3">
-              <h2 class="text-4xl text-gray-800 font-black">15% OFF</h2>
-              <p class="text-xl text-black font-semibold">
-                on your next purchase
-              </p>
-              <p class="text-base text-gray-500 font-medium">
-                use by January 2024
-              </p>
-            </div>
-            <img
-              class="hidden md:flex"
-              src="./images/cupon-devider.png"
-              alt=""
-            />
-            <img
-              class="md:hidden w-full"
-              src="./images/cupon-devider-1.png"
-              alt=""
-            />
-            <div class="space-y-2">
-              <h2 class="text-3xl text-black font-bold">NEW15</h2>
-              <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
-            </div>
-          </div>
-          <div
-            class="lg:w-1/2 bg-[#F78C9C] flex flex-col md:flex-row justify-evenly items-center rounded-3xl py-6 md:py-0 md:px-12"
-          >
-            <div class="font-Inter space-y-3">
-              <h2 class="text-4xl text-gray-800 font-black">20% OFF</h2>
-              <p class="text-xl text-black font-semibold">
-                on your next purchase
-              </p>
-              <p class="text-base text-gray-500 font-medium">
-                use by January 2024
-              </p>
-            </div>
-            <img
-              class="hidden md:flex"
-              src="./images/cupon-devider.png"
-              alt=""
-            />
-            <img
-              class="md:hidden w-full"
-              src="./images/cupon-devider-1.png"
-              alt=""
-            />
-            <div class="space-y-2">
-              <h2 class="text-3xl text-black font-bold">Couple 20</h2>
-              <p class="text-xl text-gray-500 font-medium">Coupon Code</p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="text-xl text-primaryColor font-bold border-2 border-primaryColor rounded-xl px-8 py-5 mt-16"
-        >
-          See All Offers
-        </button>
-      </section>
-
-      <section
-        class="mt-28 bg-[#F7F8F8] border-t-2 border-primaryColor rounded-t-[88px]"
-      >
-        <div class="my-container mx-auto mt-28">
-          <h2 class="text-4xl text-black font-bold text-center">
-            Madinah Paribahan
-          </h2>
-          <p
-            class="font-Inter text-xl text-gray-500 font-normal text-center mt-6"
-          >
-            Embark on a seamless journey with Madinah Paribahan, ensuring
-            end-to-end travel excellence. From comfortable buses to attentive
-            service, experience a hassle-free adventure with unparalleled
-            convenience and satisfaction.
-          </p>
-          <div
-            class="flex flex-col lg:flex-row  bg-white mt-12 border rounded-3xl"
-          >
-            <div class="lg:w-3/4 lg:h-14 p-4 md:p-8">
-              <div class="flex justify-between">
-                <div class="lg:w-7/12 flex gap-3">
-                  <img class="w-10 h-10 md:w-28 md:h-14" src="./images/bus-logo.png" alt="" />
-                  <div>
-                    <h1 class="text-xs md:text-3xl text-black font-bold">
-                      Madinah Paribahan
-                    </h1>
-                    <p
-                      class="font-Inter text-xs md:text-base text-gray-500 font-normal"
-                    >
-                      Coach-009-WEB ! AC_Business
-                    </p>
-                  </div>
-                </div>
-                <button
-                  class="font-Inter text-xs md:text-base text-primaryColor font-medium bg-[rgba(29,209,0,0.15)] flex items-center md:gap-2 p-0 md:px-5 md:py-4 rounded-xl"
-                >
-                  <img src="./images/seat-green.png" alt="" />
-                  <span>40</span> Seats left
-                </button>
-              </div>
-              <div class="bg-[#F7F8F8] mt-6 p-4 md:p-8 rounded-3xl">
-                <div class="flex justify-between border-b-2 border-dashed pb-6">
-                  <p class="text-base md:text-xl text-gray-500 font-semibold">Route</p>
-                  <p class="text-base md:text-xl text-black font-semibold">Dhaka - Sylhet</p>
-                </div>
-                <div
-                  class="flex justify-between border-b-2 border-dashed mt-6 pb-6"
-                >
-                  <p class="text-base md:text-xl text-gray-500 font-semibold">
-                    Departure Time
+        <div class="flex flex-col lg:flex-row bg-white mt-12 border rounded-3xl">
+          <div class="lg:w-3/4 lg:h-14 p-4 md:p-8">
+            <div class="flex justify-between">
+              <div class="lg:w-7/12 flex gap-3">
+                <img class="w-10 h-10 md:w-28 md:h-14" src="./images/bus-logo.png" alt="" />
+                <div>
+                  <h1 class="text-xs md:text-3xl text-black font-bold">
+                    Madinah Paribahan
+                  </h1>
+                  <p class="font-Inter text-xs md:text-base text-gray-500 font-normal">
+                    Coach-009-WEB ! AC_Business
                   </p>
-                  <p class="text-base md:text-xl text-black font-semibold">9:00 PM</p>
-                </div>
-                <div class="flex flex-col lg:flex-row justify-between gap-6 mt-6 font-Inter">
-                  <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
-                    <h2 class="text-base text-gray-900 font-medium">
-                      Boarding Point - Laxmipur
-                    </h2>
-                  </div>
-                  <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
-                    <h2 class="text-base text-gray-900 font-medium">
-                      Dropping Point - Bogura
-                    </h2>
-                  </div>
-                  <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
-                    <h2 class="text-base text-gray-900 font-medium">
-                      Est. Time - 11 Hour
-                    </h2>
-                  </div>
                 </div>
               </div>
+              <button
+                class="font-Inter text-xs md:text-base text-primaryColor font-medium bg-[rgba(29,209,0,0.15)] flex items-center md:gap-2 p-0 md:px-5 md:py-4 rounded-xl">
+                <img src="./images/seat-green.png" alt="" />
+                <span>40</span> Seats left
+              </button>
             </div>
-            <img
-              class="hidden lg:flex mr-5"
-              src="./images/info-devider.png"
-              alt=""
-            />
-            <img class="lg:hidden" src="./images/info-devider-1.png" alt="" />
-            <div class="flex flex-col justify-center items-center gap-7">
-              <img src="./images/fare.png" alt="" />
-              <div class="text-center">
-                <h2 class="text-3xl text-black font-bold mb-2">550</h2>
-                <p class="text-2xl text-gray-500 font-semibold">Per Seat</p>
+            <div class="bg-[#F7F8F8] mt-6 p-4 md:p-8 rounded-3xl">
+              <div class="flex justify-between border-b-2 border-dashed pb-6">
+                <p class="text-base md:text-xl text-gray-500 font-semibold">
+                  Route
+                </p>
+                <p class="text-base md:text-xl text-black font-semibold">
+                  Dhaka - Sylhet
+                </p>
+              </div>
+              <div class="flex justify-between border-b-2 border-dashed mt-6 pb-6">
+                <p class="text-base md:text-xl text-gray-500 font-semibold">
+                  Departure Time
+                </p>
+                <p class="text-base md:text-xl text-black font-semibold">
+                  9:00 PM
+                </p>
+              </div>
+              <div class="flex flex-col lg:flex-row justify-between gap-6 mt-6 font-Inter">
+                <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
+                  <h2 class="text-base text-gray-900 font-medium">
+                    Boarding Point - Laxmipur
+                  </h2>
+                </div>
+                <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
+                  <h2 class="text-base text-gray-900 font-medium">
+                    Dropping Point - Bogura
+                  </h2>
+                </div>
+                <div class="bg-[rgba(3,7,18,0.05)] py-5 px-4 rounded-xl">
+                  <h2 class="text-base text-gray-900 font-medium">
+                    Est. Time - 11 Hour
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
+          <img class="hidden lg:flex mr-5" src="./images/info-devider.png" alt="" />
+          <img class="lg:hidden" src="./images/info-devider-1.png" alt="" />
+          <div class="flex flex-col justify-center items-center gap-7">
+            <img src="./images/fare.png" alt="" />
+            <div class="text-center">
+              <h2 class="text-3xl text-black font-bold mb-2">550</h2>
+              <p class="text-2xl text-gray-500 font-semibold">Per Seat</p>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer></footer>
-    <script src="./script/bus.js"></script>
-    <script src="./script/utility.js"></script>
-  </body>
+      <div class="my-container mx-auto mt-16 flex flex-col lg:flex-row bg-white rounded-3xl">
+        <div class="p-1 md:p-6 md:border-r-2 border-gray-500 border-dashed">
+          <h2 class="text-2xl text-black font-semibold">Select Your Seat</h2>
+          <div class="font-Inter flex   justify-between border-y-2 border-gray-500 border-dashed py-4 mt-6">
+            <div class="flex gap-1">
+              <img src="./images/seat-gray.png" alt="" />
+              <h2 class="text-lg text-gray-500 font-medium">Available</h2>
+            </div>
+            <div class="flex gap-1">
+              <img src="./images/seat-green-filled.png" alt="" />
+              <h2 class="text-lg text-primaryColor font-medium">Selected</h2>
+            </div>
+          </div>
+          <div class="text-end mt-6">
+            <button class="bg-[rgba(3,7,18,0.1)] px-11 py-4 rounded-xl">
+              <img src="./images/wheel.svg" alt="" />
+            </button>
+          </div>
+          <div class="mt-6 space-y-6 text-center">
+            <div class="font-Inter text-lg text-gray-500 font-medium">
+              <button class="mr-[6px] md:mr-4">A</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-[6px] md:mr-8">A1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-[6px] md:mr-16">A2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-[6px] md:mr-8">A3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl ">A4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">B</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-[6px] md:mr-8">B1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-[6px] md:mr-16">B2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-[6px] md:mr-8">B3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl ">B4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">C</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-11 py-4 rounded-xl mr-[6px] md:mr-8">C1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-11 py-4 rounded-xl mr-[6px] md:mr-16">C2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-11 py-4 rounded-xl mr-[6px] md:mr-8">C3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-11 py-4 rounded-xl ">C4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">D</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-11 py-4 rounded-xl mr-2 md:mr-8">D1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-11 py-4 rounded-xl mr-2 md:mr-16">D2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-11 py-4 rounded-xl mr-2 md:mr-8">D3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-11 py-4 rounded-xl ">D4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">E</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-2 md:mr-8">E1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-2 md:mr-16">E2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-2 md:mr-8">E3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl ">E4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">F</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-2 md:mr-8">F1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-2 md:mr-16">F2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl mr-2 md:mr-8">F3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[45px] py-4 rounded-xl ">F4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">G</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl mr-2 md:mr-8">G1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl mr-2 md:mr-16">G2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl mr-2 md:mr-8">G3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl ">G4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">H</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl mr-2 md:mr-8">H1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl mr-2 md:mr-16">H2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl mr-2 md:mr-8">H3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-3.5 md:px-[43px] py-4 rounded-xl ">H4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">I</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[49px] py-4 rounded-xl mr-2 md:mr-8">I1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[49px] py-4 rounded-xl mr-2 md:mr-16">I2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[49px] py-4 rounded-xl mr-2 md:mr-8">I3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[49px] py-4 rounded-xl ">I4</button>
+            </div>
+            <div class="font-Inter text-lg text-gray-500 font-medium ">
+              <button class="mr-[6px] md:mr-4">J</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[46px] py-4 rounded-xl mr-2 md:mr-8">J1</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[46px] py-4 rounded-xl mr-2 md:mr-16">J2</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[46px] py-4 rounded-xl mr-2 md:mr-8">J3</button>
+              <button class="bg-[rgba(3,7,18,0.1)] px-4 md:px-[46px] py-4 rounded-xl ">J4</button>
+            </div>
+          </div>
+        </div>
+        <div class="p-8">
+          <h2 class="text-2xl text-black font-semibold">Select Your Seat</h2>
+          <hr class="border2 border-gray-500 border-dashed mt-6">
+          <div class="font-Inter bg-[#F7F8F8] p-8 lg:w-[455px]  mt-6 rounded-xl">
+            <div class="flex justify-between border-b-2 border-gray-500 border-dashed pb-4">
+              <h2 class="text-xl text-black font-semibold">Seat <sup
+                  class="bg-primaryColor text-white px-4 rounded-xl">2</sup></h2>
+              <h2 class="text-xl text-black font-semibold">Class</h2>
+              <h2 class="text-xl text-black font-semibold">Price</h2>
+            </div>
+            <hr class="border-2 mt-8">
+            <div class="flex justify-between mt-4">
+              <h2 class="text-xl text-black font-semibold">Total Price</h2>
+              <h2 class="text-xl text-black font-semibold">BDT <span>1100</span></h2>
+            </div>
+            <form class="relative">
+              <input
+                class="w-full bg-white rounded-xl mt-4 text-base text-gray-500 font-normal px-5 py-5 border-2 focus:outline-none"
+                type="text" placeholder="Have any coupon?">
+              <button
+                class="text-base text-white font-semibold bg-primaryColor rounded-lg px-5 py-3 absolute right-2 bottom-2 ">Apply</button>
+            </form>
+            <div class="flex justify-between mt-6">
+              <h2 class="text-xl text-black font-semibold">Grand Total</h2>
+              <h2 class="text-xl text-black font-semibold">BDT <span>1100</span></h2>
+            </div>
+          </div>
+          <div class="mt-6">
+            <div>
+              <h2 class="text-lg text-black font-semibold">Passenger Name*</h2>
+              <input
+                class="w-full text-base text-gray-500 font-normal px-6 py-4 border-2 rounded-xl mt-4 focus:outline-none"
+                type="text" placeholder="Enter your name">
+            </div>
+            <div class="mt-6">
+              <h2 class="text-lg text-black font-semibold">Phone Number*</h2>
+              <input
+                class="w-full text-base text-gray-500 font-normal px-6 py-4 border-2 rounded-xl mt-4 focus:outline-none"
+                type="text" placeholder="Enter your phone number">
+            </div>
+            <div class="mt-6">
+              <h2 class="text-lg text-black font-semibold">Email ID</h2>
+              <input
+                class="w-full text-base text-gray-500 font-normal px-6 py-4 border-2 rounded-xl mt-4 focus:outline-none"
+                type="text" placeholder="Enter your email id">
+            </div>
+            <div>
+              <button
+                class="text-xl text-white font-extrabold bg-primaryColor rounded-lg px-5 py-3 w-full mt-6 ">Next</button>
+                <div class="flex justify-evenly mt-6  ">
+                  <p class="text-base text-gray-500 font-normal border-b-2 border-gray-500 pb-1">Terms and Conditions</p>
+                  <p class="text-base text-gray-500 font-normal border-b-2 border-gray-500 pb-1 ">Cancellation Policy</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+  <script src="./script/bus.js"></script>
+  <script src="./script/utility.js"></script>
+</body>
+
 </html>
